@@ -37,6 +37,8 @@ nuts2 = gpd.read_file('https://gisco-services.ec.europa.eu/distribution/v2/nuts/
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SLATE])
 
+server = app.server
+
 load_figure_template(["slate"])
 color = 'darkgreen'
 font_s = {'font-family' : 'bahnschrift'}
