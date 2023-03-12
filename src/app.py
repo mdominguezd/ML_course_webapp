@@ -5,7 +5,6 @@ from dash import Dash, dcc, html, callback, callback_context, dash_table
 import dash_bootstrap_components as dbc
 from dash_bootstrap_templates import load_figure_template
 import dash_daq as daq
-from jupyter_dash import JupyterDash
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 import numpy as np
