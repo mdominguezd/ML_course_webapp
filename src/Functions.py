@@ -457,6 +457,7 @@ def my_kmeans(data, K=4, maxiter=10):
     np.random.seed(seed)
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
+    
     ## TODO: Choose K data points as initial cluster centroids
     random_indeces = random.sample(range(len(data)),K)
     cluster_centroids = data[random_indeces]
