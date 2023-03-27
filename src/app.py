@@ -25,10 +25,10 @@ from Functions import read_data, fit_regression, get_metrics, get_error_n_predic
 
 # Read the data that will be used
 X_train, X_test, y_train, y_test = read_data()
-im1, im2, im1gt, im2gt = read_data_cls()
+# im1, im2, im1gt, im2gt = read_data_cls()
 data_cities, regions, feature_names_clu = read_data_clu()
-# CLean up dat for assignment 2
-X_tr, X_te, y_tr, y_te = data_clean_up(im1, im2, im1gt, im2gt)
+# CLean up data for assignment 2
+# X_tr, X_te, y_tr, y_te = data_clean_up(im1, im2, im1gt, im2gt)
 # To avoid reading the geojson everytime we update the map
 nuts2 = gpd.read_file('https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2016_4326_LEVL_2.geojson')
 
